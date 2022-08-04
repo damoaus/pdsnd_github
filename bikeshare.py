@@ -28,7 +28,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while city not in CITY_DATA:
-        city = input("What city do you want to analyze? Chicago ,New York City or Washington \n").lower()
+        city = input("To analyze data please select one of the following cities: Chicago ,New York City or Washington \n").lower()
 
     time_options = ["month", "day", "both", "none"]
     while filter_time not in time_options:
