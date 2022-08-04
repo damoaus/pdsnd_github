@@ -75,10 +75,12 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
+    "Updating the dataframe to include a month column if filtered by month"
     if month != 'all':
         month = months.index(month)
         df = df[df['month'] == month]
 
+    "Creating dictionary to change shorthand into long form"
     weekday_dic = {'mon': 'Monday',
                    'tues': 'Tuesday',
                    'wed': 'Wednesday',
