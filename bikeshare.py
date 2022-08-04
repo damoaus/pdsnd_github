@@ -194,6 +194,7 @@ def user_stats(df):
 
 
 def view_raw(df):
+    "Displays raw data of the dataframe requested"
     view_ans = input("\nWould you like to view the raw data? Enter yes or no. \n").lower()
     call_start = 0
     call_stop = 5
